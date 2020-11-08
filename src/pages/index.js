@@ -20,7 +20,7 @@ export const query = graphql`
         construction1: file(relativePath: { eq: "construction1.jpg" }) {
             childImageSharp {
                 fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_noBase64
                     originalName
                 }
             }
@@ -28,7 +28,7 @@ export const query = graphql`
         construction2: file(relativePath: { eq: "construction2.jpg" }) {
             childImageSharp {
                 fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_noBase64
                     originalName
                 }
             }

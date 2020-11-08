@@ -39,7 +39,7 @@ export const query = graphql`
         curiosities: file(relativePath: { eq: "curiosities.jpg" }) {
             childImageSharp {
                 fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_noBase64
                     originalName
                 }
             }

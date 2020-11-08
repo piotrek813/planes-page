@@ -16,7 +16,9 @@ const Main = styled.main`
 const MainTemplate = ({ children, title }) => {
   return (
     <>
-      <Helmet lang="pl" title={title} />
+      <Helmet lang="pl" title={title}>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+      </Helmet>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Nav />

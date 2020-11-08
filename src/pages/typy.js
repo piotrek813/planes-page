@@ -64,7 +64,7 @@ export const query = graphql`
         boeing_767_lot: file(relativePath: { eq: "boeing 767 lot.jpg" }) {
             childImageSharp {
                 fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_noBase64
                     originalName
                 }
             }
@@ -72,7 +72,7 @@ export const query = graphql`
         embraer_175: file(relativePath: { eq: "embraer 175.jpg" }) {
             childImageSharp {
                 fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_noBase64
                     originalName
                 }
             }
@@ -80,7 +80,7 @@ export const query = graphql`
         tu_134: file(relativePath: { eq: "tu-134.jpg" }) {
             childImageSharp {
                 fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_noBase64
                     originalName
                 }
             }
